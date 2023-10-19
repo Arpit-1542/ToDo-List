@@ -1,0 +1,230 @@
+.App {
+  text-align: start;
+  font-family: poppins;
+  padding: 0 300px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #7ec5ff;
+}
+
+.parent {
+  margin-top: 70px;
+  padding: 30px;
+  background-color: rgba(220, 217, 217, 0.404);
+  box-shadow: 10px 10px 30px 5px black;
+  border-radius: 10px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+}
+
+form button {
+  width: 20%;
+  height: 40px;
+  background-color: #7ec5ff;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form input {
+  width: 95%;
+  height: 40px;
+  padding: 0 20px;
+  border: 2px solid #7ec5ff;
+  box-shadow: 0px 0px 10px 2px #7ec5ff;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.allTask {
+  height: 300px;
+  /* padding: 100px 0; */
+  overflow: scroll;
+}
+
+.taskshow ul {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  padding: 0;
+  list-style: none;
+  /* margin-top: 40px; */
+  border-bottom: 1px solid black;
+}
+
+.taskshow ul:last-child {
+  margin-bottom: 50px;
+}
+
+.taskshow ul li:last-child {
+  margin-left: auto;
+}
+
+.taskshow ul li:last-child button {
+  background-color: transparent;
+  /* border: 2px solid black; */
+  border: none;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.taskshow ul li {
+  margin-right: 10px;
+}
+
+.taskshow ul li input {
+  margin-bottom: -20x;
+}
+
+input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+}
+
+.footer {
+  /* padding: 0 20px; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(247, 247, 144, 0.822);
+  border-radius: 0 0 10px 10px;
+}
+
+.footer .searchbar {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.footer .searchbar p:hover input {
+  display: block;
+}
+
+.footer .searchbar p:hover {
+  width: 150px;
+  background-color: #7ec5ff;
+}
+
+.footer .searchbar button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  display: flex;
+}
+
+.footer .searchbar button:last-child {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.footer .border {
+  width: 1px;
+  height: 50%;
+  background-color: rgb(48, 48, 48);
+  margin: 0 15px;
+}
+
+.footer .btn {
+  position: absolute;
+  right: 30px;
+  /* bottom: 6px; */
+}
+
+.footer .btn input {
+  margin: 0 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 2px solid black;
+  transition: 0.4s all;
+}
+
+/* .footer .btn input:first-child {
+  border: 2px solid black;
+} */
+
+.footer .btn input:hover {
+  background-color: #7ec5ff;
+}
+
+.search-box {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin-left: 10px;
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  height: 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn p {
+  font-size: 20px;
+}
+
+.search-btn {
+  color: white;
+  float: right;
+  width: 15px;
+  margin: 0 10px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 0;
+}
+
+.search-box:hover>.search-input {
+  width: 250px;
+  padding: 0 7px;
+}
